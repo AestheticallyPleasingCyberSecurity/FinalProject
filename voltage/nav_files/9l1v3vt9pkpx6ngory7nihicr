@@ -1,0 +1,310 @@
+/**
+ * This mixin is for consumers to customize two aspects of tabs:
+ * - $first-tab-left-spacing: The amount of left spacing on the first tab
+ * - $tab-scroller-color: The color of the transport controls
+ */
+.launchpad--is-open {
+  background-color: #e1e9ee; }
+
+.launchpad--is-closed {
+  background-color: white; }
+
+.launchpad__cards {
+  list-style-type: none; }
+  .launchpad--is-open .launchpad__cards {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    clear: both; }
+
+.launchpad__title--is-open {
+  max-width: 1080px; }
+
+.launchpad__title--is-closed {
+  max-width: 480px; }
+
+.launchpad-card--size-large {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 33.33333%; }
+  .launchpad-card--size-large:first-child {
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px; }
+  .launchpad-card--size-large:last-child {
+    border-right: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px; }
+  .launchpad-card--size-large::before {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transition: opacity 100ms ease-in, box-shadow 100ms ease, -webkit-transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out, opacity 100ms ease-in, box-shadow 100ms ease;
+    transition: transform 200ms ease-in-out, opacity 100ms ease-in, box-shadow 100ms ease, -webkit-transform 200ms ease-in-out;
+    visibility: hidden;
+    width: 100%;
+    z-index: 0; }
+
+.launchpad-card--size-small {
+  max-width: 200px; }
+
+.launchpad-card--is-selected {
+  overflow: initial; }
+  .launchpad-card--is-selected::before {
+    background: white;
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.12, 1.12);
+            transform: scale3d(1.03, 1.12, 1.12);
+    visibility: visible;
+    z-index: 1; }
+
+.launchpad-card--is-grayed-out {
+  background: transparent;
+  box-shadow: none; }
+
+.launchpad-card__content {
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out; }
+  .launchpad-card--is-selected .launchpad-card__content {
+    position: relative;
+    -webkit-transform: translateY(-1%);
+            transform: translateY(-1%);
+    z-index: 2; }
+
+.launchpad-card__header {
+  position: relative; }
+
+.launchpad-card__icon {
+  height: 56px;
+  width: 56px; }
+  .launchpad-card--is-complete .launchpad-card__icon {
+    background-image: url(/sc/h/dj6cvn64nct6wbza7hew9c93i); }
+
+.launchpad-card__actions {
+  display: none;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 100ms ease-in; }
+  .launchpad-card--is-selected .launchpad-card__actions {
+    display: block;
+    opacity: 1;
+    overflow: initial; }
+  .launchpad-card--is-complete .launchpad-card__actions {
+    display: none; }
+
+.launchpad-card__mini-content {
+  border-left: 1px solid rgba(0, 0, 0, 0.15); }
+
+.launchpad-card__mini-cta {
+  height: 100%;
+  line-height: 20px; }
+
+.launchpad-done {
+  background: #e1e9ee;
+  position: relative;
+  text-align: center; }
+
+.launchpad-done-fade-in {
+  -webkit-animation: 1s ease-in 1 both fade-in;
+          animation: 1s ease-in 1 both fade-in;
+  opacity: 0; }
+
+.launchpad-done__dismiss-button {
+  color: rgba(0, 0, 0, 0.55); }
+
+.launchpad-done__icon {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+  background-image: url(/sc/h/3tvwc2j64uiactl3ont18461m);
+  background-position: center center;
+  display: block;
+  height: 118px;
+  width: 230px; }
+
+.launchpad-done__content {
+  margin: 0 auto;
+  max-width: 600px; }
+
+.launchpad-done__heading {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+  font-weight: 400; }
+
+.launchpad-done__message {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s; }
+
+.launchpad-add-connections__icon {
+  background-image: url(/sc/h/jgz2omhh9nvs84vkskzfa8o3); }
+
+.launchpad-add-connections__connection-count {
+  color: #0084bf;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 14px;
+  width: 100%; }
+
+.launchpad-add-full-profile-info__primary-action {
+  border: 1px solid transparent;
+  box-sizing: content-box; }
+  .launchpad-add-full-profile-info__upload-action:hover .launchpad-add-full-profile-info__primary-action {
+    background-color: #0073b1; }
+
+.launchpad-add-full-profile-info__upload-action-mini:hover .launchpad-add-full-profile-info__mini-cta {
+  background-color: rgba(0, 96, 151, 0.1); }
+
+.launchpad-add-full-profile-info__upload {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute; }
+
+.launchpad-add-full-profile-info__upload-input:focus-within ~ .launchpad-add-full-profile-info__primary-action {
+  border-color: white;
+  outline: 2px solid #96c8fc; }
+
+.launchpad-add-full-profile-info__upload-input:focus ~ .launchpad-add-full-profile-info__primary-action {
+  border-color: white;
+  outline: 2px solid #96c8fc; }
+
+.launchpad-add-full-profile-info__upload-action-mini:focus-within ~ .launchpad-add-full-profile-info__mini-cta {
+  outline: 2px solid #96c8fc; }
+
+.launchpad-add-full-profile-info__upload-action-mini:focus ~ .launchpad-add-full-profile-info__mini-cta {
+  outline: 2px solid #96c8fc; }
+
+.launchpad-card__add-full-profile-info__intermediate-card__subtitle {
+  margin-left: 48px;
+  margin-right: 48px; }
+
+.launchpad-add-photo__icon {
+  background-image: url(/sc/h/9crsqi3ijq2d0m6uay7opimmn); }
+
+.launchpad-add-photo__primary-action {
+  border: 1px solid transparent;
+  box-sizing: content-box; }
+  .launchpad-add-photo__upload-action:hover .launchpad-add-photo__primary-action {
+    background-color: #0073b1; }
+
+.launchpad-add-photo__upload-action-mini:hover .launchpad-add-photo__mini-cta {
+  background-color: rgba(0, 96, 151, 0.1); }
+
+.launchpad-add-photo__upload-input {
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  .launchpad-add-photo__upload-input:focus-within ~ .launchpad-add-photo__primary-action {
+    border-color: white;
+    outline: 2px solid #96c8fc; }
+  .launchpad-add-photo__upload-input:focus ~ .launchpad-add-photo__primary-action {
+    border-color: white;
+    outline: 2px solid #96c8fc; }
+
+.launchpad-add-photo__upload-input-mini {
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  .launchpad-add-photo__upload-input-mini:focus-within ~ .launchpad-add-photo__mini-cta {
+    outline: 2px solid #96c8fc; }
+  .launchpad-add-photo__upload-input-mini:focus ~ .launchpad-add-photo__mini-cta {
+    outline: 2px solid #96c8fc; }
+
+.launchpad-card--is-selected .launchpad-add-profile-info__subtitle {
+  line-height: 16px; }
+
+.launchpad-add-profile-info__icon {
+  background-image: url(/sc/h/e2iymlqjjo30x1191htvcimnl); }
+
+.launchpad-stay-informed__icon {
+  background-image: url(/sc/h/6bsoysvzaiotsgbbodlh2har3); }
+
+/**
+ * This mixin is for consumers to customize two aspects of tabs:
+ * - $first-tab-left-spacing: The amount of left spacing on the first tab
+ * - $tab-scroller-color: The color of the transport controls
+ */
+/**
+* If you don't know the width or height, you can use the transform property
+* and a negative translate of 50% in both directions (it is based on the
+* current width/height of the element) to center.
+*/
+/**
+Positions the element in the center of the viewport.
+*/
+/**
+  * This is a SASS utility that grabs the given css property from
+  * the style map defined for the restyle pattern that is passed
+  *
+  * e.g. get-pattern-property(large button, line-height) // returns `40px`
+  */
+/**
+ * Place this mixin in your image wrapper which requires to vertically center the image inside
+ * Provide a classname as $expandByHeightSelector if you want to handle images with width/height > display ratio(wrapperWidth/wrapperHeight)
+ */
+.photo-filter__select-body-scroll-container {
+  overflow-x: visible;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.photo-filter__body {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.photo-filter__slider-body {
+  height: 100%;
+  position: relative; }
+
+.photo-filter__footer {
+  background-color: white; }
+
+.photo-filter__footer-button {
+  color: rgba(0, 0, 0, 0.55); }
+
+.photo-filter__footer-button-container {
+  margin: 0 24px;
+  position: relative; }
+
+.photo-filter__footer-button--selected {
+  color: #0084bf; }
+
+.photo-filter__footer-button--visibility .visibility-setting__trigger {
+  color: rgba(0, 0, 0, 0.55); }
+
+.photo-filter__footer-bar {
+  top: 0;
+  background-color: #0084bf; }

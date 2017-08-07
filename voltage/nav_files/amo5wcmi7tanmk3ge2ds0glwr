@@ -1,0 +1,23 @@
+/**
+ * This mixin is for consumers to customize two aspects of tabs:
+ * - $first-tab-left-spacing: The amount of left spacing on the first tab
+ * - $tab-scroller-color: The color of the transport controls
+ */
+/**
+* If you don't know the width or height, you can use the transform property
+* and a negative translate of 50% in both directions (it is based on the
+* current width/height of the element) to center.
+*/
+/**
+Positions the element in the center of the viewport.
+*/
+/**
+  * This is a SASS utility that grabs the given css property from
+  * the style map defined for the restyle pattern that is passed
+  *
+  * e.g. get-pattern-property(large button, line-height) // returns `40px`
+  */
+/**
+ * Place this mixin in your image wrapper which requires to vertically center the image inside
+ * Provide a classname as $expandByHeightSelector if you want to handle images with width/height > display ratio(wrapperWidth/wrapperHeight)
+ */
