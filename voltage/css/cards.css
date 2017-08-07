@@ -29,7 +29,7 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 26px;
-  color: gray;
+  color: #231C51;
   font-weight: 400;
 }
 @media screen and (max-width: 480px) {
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
-  color: #715AFF;//CHANGE FONT.C TO PURPLE
+  color: #034732;//CHANGE FONT.C TO PURPLE
 }
 
 p {
@@ -62,7 +62,7 @@ h2 {
 }
 
 a {
-  color: #1784fb;
+  color: #097571;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -1068,7 +1068,7 @@ a:hover .lnk-icon-right {
   display: block;
 }
 .fh5co-project-style-2 .fh5co-projects ul li a .fh5co-overlay {
-  background: #000;
+  background: #8EFFFB;
   position: absolute;
   top: 0;
   left: 0;
@@ -3173,7 +3173,7 @@ a:hover .lnk-icon-right {
 }
 
 .fh5co-pricing-style-2 {
-  background: #B4ADEA;
+  background: #6DC2FF;
 }
 .fh5co-pricing-style-2 .fh5co-heading {
   color: #fff;

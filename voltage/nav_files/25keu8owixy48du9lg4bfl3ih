@@ -1,0 +1,1 @@
+var dropdownAdChoices=document.querySelector(".exp-ac--toggle-click .ac__container");null!==dropdownAdChoices&&(dropdownAdChoices.addEventListener("click",function(){dropdownAdChoices.classList.toggle("ac__container--active")}),dropdownAdChoices.addEventListener("mouseleave",function(){dropdownAdChoices.classList.remove("ac__container--active")}));
