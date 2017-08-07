@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<script type="text/javascript">
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+		theme: "theme2",
+		title:{
+			text: "Who's Getting Attacked?"
+		},
+		data: [
+		{
+			type: "pie",
+			showInLegend: true,
+			toolTipContent: "{y} - #percent %",
+			yValueFormatString: "#0.#,,. Million",
+			legendText: "{indexLabel}",
+			dataPoints: [
+				{  y: 5000000, indexLabel: "Aerospace/Defense" }, //17
+				{  y: 4250000, indexLabel: "Energy" }, //14
+				{  y: 3250000, indexLabel: "Finance" }, //11
+				{  y: 2150000, indexLabel: "Computer Hardware/Software"}, //8
+				{  y: 3000000, indexLabel: "Legal/Consulting" }, //10
+				{  y: 1700000, indexLabel: "Media/Entertainment"}, //7
+				{  y: 1200000, indexLabel: "Pharmaceutacals"} //7
+			]
+		}
+		]
+	});
+	chart.render();
+}
+
+//more ideas 4 chong and navya: make a "dummy" sha256 algorithm function in js, it doesnt matter if its not accurate
+//put in all the info from doc onto a google sheet, then use table top
+	</script>
+	<script src="canvasjs.min.js"></script>
+	<title>CanvasJS Example</title>
+</head>
+<body>
+	<div id="chartContainer" style="height: 400px; width: 100%;"></div>
+</body>
+</html>

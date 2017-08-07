@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+
+  <body>
+    Enter your password: <input type="text" id="password" name="daysofjourney">
+    <input type="button" value="submit" onclick="sendValue()">
+    <p id="hash"> hash... in process.... </p>
+  </body>
+  <script>
+
+  function sendValue() {
+      document.getElementById('hash').innerHTML = sha256(document.getElementById("password").value);
+  }
+
+  function sha256(myPass){
+    //first, generates random integers and letters array
+    var letArray = [];
+    for (var index = 0; index < 15; index++){
+      var randomlet = (Math.random() + 1).toString(36).substring(8);
+        letArray[index] = randomlet;
+    }
+    return letArray;
+
+  }
+  </script>
+  </html>
