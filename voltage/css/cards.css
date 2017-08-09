@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
-  color: 	#08273d;//CHANGE FONT.C TO PURPLE 
+  color: 	#08273d;//CHANGE FONT.C TO PURPLE
 }
 
 p {
@@ -2199,7 +2199,7 @@ a:hover .lnk-icon-right {
 /* BLOG STYLE #1 */
 .fh5co-blog-style-1 {
   padding: 7em 0;
-  background: #fff;
+  background: #6dc2ff;
 }
 @media screen and (max-width: 768px) {
   .fh5co-blog-style-1 {
