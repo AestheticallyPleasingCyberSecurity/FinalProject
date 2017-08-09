@@ -10,7 +10,7 @@ var chart = new CanvasJS.Chart("chartContainer1",
     {
         animationEnabled: true,
         title: {
-            text: "Spline Area Chart"
+            text: ""
         },
         axisX: {
             interval: 10,
@@ -46,20 +46,18 @@ var chart = new CanvasJS.Chart("chartContainer2",
     {
         animationEnabled: true,
         title: {
-            text: "Pie Chart",
+            text: "Motivations Behind Attacks in January 2017",
         },
         data: [
         {
             type: "pie",
             showInLegend: true,
             dataPoints: [
-                { y: 4181563, legendText: "PS 3", indexLabel: "PlayStation 3" },
-                { y: 2175498, legendText: "Wii", indexLabel: "Wii" },
-                { y: 3125844, legendText: "360", indexLabel: "Xbox 360" },
-                { y: 1176121, legendText: "DS", indexLabel: "Nintendo DS" },
-                { y: 1727161, legendText: "PSP", indexLabel: "PSP" },
-                { y: 4303364, legendText: "3DS", indexLabel: "Nintendo 3DS" },
-                { y: 1717786, legendText: "Vita", indexLabel: "PS Vita" }
+                { y: 77.5, legendText: "Cyber Crime", indexLabel: "Cyber Crime"},
+                { y: 13.5, legendText: "Hacktivism", indexLabel: "Hacktivism" },
+                { y: 6.7, legendText: "Cyber Espionage", indexLabel: "Cyber Espionage" },
+                { y: 2.2, legendText: "Cyber Warfare", indexLabel: "Cyber Warfare" }
+
             ]
         },
         ]
@@ -70,12 +68,12 @@ var chart = new CanvasJS.Chart("chartContainer3",
     {
         animationEnabled: true,
         title: {
-            text: "Line Chart"
+            text: "Distribution in Malware 2016 Q1/Q2"
         },
         axisX: {
             valueFormatString: "MMM",
             interval: 1,
-            intervalType: "month"
+            intervalType: "Type"
         },
         axisY: {
             includeZero: false
@@ -84,7 +82,7 @@ var chart = new CanvasJS.Chart("chartContainer3",
         {
           type: "line",
           dataPoints: [
-              { x: new Date(2012, 00, 1), y: 450 },
+              { x: new Date(Virus), y: 450 },
               { x: new Date(2012, 01, 1), y: 414 },
               { x: new Date(2012, 02, 1), y: 520, indexLabel: "highest", markerColor: "red", markerType: "triangle" },
               { x: new Date(2012, 03, 1), y: 460 },
@@ -106,7 +104,7 @@ var chart = new CanvasJS.Chart("chartContainer4",
     {
         animationEnabled: true,
         title: {
-            text: "Column Chart"
+            text: "Dis of malware "
         },
         axisX: {
             interval: 10,
