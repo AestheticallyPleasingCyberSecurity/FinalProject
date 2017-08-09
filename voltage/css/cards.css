@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
-  color: #034732;//CHANGE FONT.C TO PURPLE
+  color: 	#08273d;//CHANGE FONT.C TO PURPLE 
 }
 
 p {
@@ -3173,7 +3173,7 @@ a:hover .lnk-icon-right {
 }
 
 .fh5co-pricing-style-2 {
-  background: #6DC2FF;
+  background: #B4ADEA; <!-- CHANGE TO PURPLE #b4adea  -->
 }
 .fh5co-pricing-style-2 .fh5co-heading {
   color: #fff;
